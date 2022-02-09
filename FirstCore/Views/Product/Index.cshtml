@@ -1,0 +1,11 @@
+﻿@model List<FirstCore.Models.Product>
+
+<table style="border:1px solid black">
+    @foreach (var item in Model)
+    {
+        <tr style="border:1px solid black">
+            <td style="border:1px solid black">@item.ProductName</td>
+            <td style="border:1px solid black">@item.Description</td>
+        </tr>
+    }
+</table>
